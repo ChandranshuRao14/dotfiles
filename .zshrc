@@ -4,14 +4,14 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster"
 
 # Plugins
-plugins=(git kube-ps1 kubectl-autocomplete)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
 # -------------------------------------------------------------------
 # Aliases
 # -------------------------------------------------------------------
-alias ls='ls -lh'
+alias ls='ls -lh --color=auto'
 alias cdd='cd $(git rev-parse --show-toplevel)'
 alias k='kubectl'
 alias kc='kubectx'
